@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thread to Podcast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧵 Thread to Podcast</h1>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <textarea 
+                    id="threadInput" 
+                    placeholder="Paste your Twitter thread here..."
+                    rows="8"
+                ></textarea>
+                
+                <div class="button-group">
+                    <button id="narrateBtn" class="btn">Narrate Thread</button>
+                    <button id="podcastBtn" class="btn">Make it a Podcast</button>
+                </div>
+            </div>
+
+            <div id="loading" class="loading-spinner hidden">
+                <div class="spinner"></div>
+                <p>Processing your thread...</p>
+            </div>
+
+            <div id="audioPlayerContainer" class="audio-player hidden">
+                <!-- Audio player will be inserted here -->
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
